@@ -1,0 +1,32 @@
+#doc {
+  
+  padding-top:5px;
+  padding-bottom:10px;
+}
+
+#doc h2{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+  padding-bottom: 10px;
+  border-bottom: solid 1px black;
+  margin-bottom: 10px;
+}
+
+#doc p{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  color: black;
+  text-justify: inter-word;
+}
+
+#doc li{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  color: black;
+  text-justify: inter-word;
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>HRDirect FRD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lato:400i|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="header.css">
+    
+    <link rel="stylesheet" href="hiw.css">
+    
+    <link rel="stylesheet" href="doc.css">
+    
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <h1>HRDirect FRD</h1>  
+          </div>
+
+          <div class="six columns">
+            <p>
+              <a href="#hiw">How it works</a> | <a href="#doc">Documentation</a> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="hiw">
+      
+      <div class="container">
+        <h2>How it works</h2>
+        
+        <div class="row">
+          <div class="twelve columns">
+            <p class="main">
+              HRDirect FRD is designed to help mid-size and large companies manage their employees more efficiently. We all know the importance of Human Ressource management. Indeed, a company is defined not only by its economic capital and technical skills (know-how), but also by its human capital. Employee interaction and motivation are success factors that should not be overlooked for the smooth running of a company. This is where human resources managers will be involved. Their function is multifaceted: it covers recruitment, orientation, staff training, remuneration, benefits and communication.
+HR has a strategic role and is one of the main actors in meeting the company's challenges. Good human resources management allows companies to gain an advantage over their competitors and that is where HRDirect FRD comes into play.
+
+            
+              <br><br>But how does it work ?<br><br>
+              
+               HRDirect FRD is based on Google's FireBase Realtime DataBase technology. It allows Human resource managers to interact with each other in real time and way more efficiently. Every HR managers will get an acces to a Firebase Realtime Database, allowing them to consult, create, modify or delete datas. Being a realtime technology, by doing so, each one of them will observe in real time the changes made and will thus, always have updated datas.<br> <br>
+              The main goal being for them to fill in the maximum of information about their employees. Gender, race, age, main skills or even global appreciation, everything is possible, as long as every managers follow the same layouts. It will thus allow HR managers to have constant up-to-date information about all the employees in the firm and thus greatly simply human ressource management. An employee suddently left the firm and need to be replaced urgently ? Managers will have acces to employees having the same skills and their appreciation, making it easier to replace him or to facilitate internal promotion. There is an upcoming conference to be given by the company in a certain city but the branch office does not have any spanish speaker employee ? No problem, with HRDirect FRD managers can easily look within the firm for technically qualified spanish speaker employees.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div id="doc">
+      <div class="container">
+        <h2>Documentation</h2>
+        
+        <div class="row">
+          <div class="twelve columns">
+            <p>
+              Let's see now how exactly we are going to set our HRDirect FRD in motion:
+              <li>First we need to go to <a href="https://firebase.google.com/">Firebase</a> and create a new project</li>
+              <li>Then, under "Authentication", we set an email adress and a password as connexion mode</li>
+              <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2009.10.18.png?1543133451034">
+              <p>
+                We will share this email and password to every HR manager so that they can all interact.<br>We have now a database where every manager can add, modify, erase content.<br>We will start of course by adding information about every employees using the same layout. To do so, each manager will convert their existing excel file where they have datas of all their employees into JSON file. There are plenty of ways to do so, one of them is using <a href="http://beautifytools.com/excel-to-json-converter.php">http://beautifytools.com/excel-to-json-converter.php</a>
+            </p>
+              <li>Now, managers will upload (using fonction .set in script.js) their JSON data into Firebase</li>
+             
+    
+              <li>By doing so, they have now acces to the datas of every single one employee within the firm</li>
+              <li>Any change, will automatically update the firebase and the datas for everyone so managers will now have acces to always-up-to-date datas</li>
+            
+            <p>The database will thus look something like this (way more detailed of course) :<br> <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2009.32.20.png?1543134758766"></p>
+            
+            </p>
+              <li>Having established a common database, let's now talk how managers can use it</li>
+              <li>It quite easy actually, from the common data they will need to export the datas to JSON as follows :</li>
+              <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2009.42.10.png?1543135374914">
+              <li>They will now be able to use the datas contained in the JSON to do whatever they want and research anything using Queries as seen during this course :</li>
+              <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2009.45.54.png?1543135582282">
+              <p>
+            
+            We see here the importance of having the same layouts. Managers can now replace for example "FavoriteFruit" by anything (gender, age, skills, etc...) and have acces to all the employees corresponding to their criterias. Let's thus look for spanish speaker :</p>
+            
+        
+              
+              <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2010.04.21.png?1543136682783">
+          
+          <p>
+            We have switched "FavoriteFruit" by "language" and "apple" by "spanish".
+          </p>
+            
+   
+              <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2009.54.25.png?1543136180749">
+            <p>
+              Finley Knight does speak spanish.
+          </p>
+            
+            <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2009.55.02.png?1543136185180">
+            <p>
+              So does Lacy Holman.
+          </p>
+          <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2010.05.33.png?1543136760944">
+          <p>
+            Brenda Boyle however does not.
+          </p>
+          
+          <img src="https://cdn.glitch.com/dafdd4a3-6b2c-4997-a3fd-823e80f1bce0%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-25%20a%CC%80%2010.07.27.png?1543136862722">
+          <p>
+            Which is shown when we launch the script. HRDirect FRD helped us find spanish speaker among our employees.
+          </p>
+          </div>      
+      
+        </div>
+      </div>
+    </div>
+    </body>
+</html>

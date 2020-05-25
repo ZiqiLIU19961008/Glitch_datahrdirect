@@ -1,0 +1,30 @@
+#header {
+  padding-top: 20px;
+  background: url(https://www.bountifulutah.gov/file/d98f54af-6375-4589-ac1c-bae0193252e5);
+  font-family: 'News Cycle', sans-serif;
+  color: white;
+  font-size: 20px;
+  
+}
+
+#header h1 { /* target only "h1" elements inside element with id "header" */
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+#header p { /* target only "p" elements inside element with id "header" */
+  color: blue;
+  text-align: right;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+
+#header a { /* target only "a" elements inside element with id "header" */
+  color: white;
+  text-decoration: none;
+}
+
+#header a:hover{
+  color: #bbb;
+}
